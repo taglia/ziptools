@@ -1,0 +1,21 @@
+------------------
+-                -
+-    ZipTools    -
+-                -
+------------------
+
+This program lets you control a parallel or a SCSI zip drive with a nice
+graphic interface. It is based on the work of Grant R. Guenther and Itai
+Nahshon. The program uses the free version of Troll Tech Qt toolkit
+(www.troll.no).
+
+To build the dialogs I used Qt Architect, by Jeff Harris and Klaus Ebner.
+
+To build it edit the Makefile and run make. To install it copy the file
+ziptools wherever you want: You have to be root to configure the program (it
+saves the configuration in /etc/ziptools.conf), but it can be used by normal
+users (if you suid it : "chmod u+s ziptools" as root). It "should" be secure,
+normal user "should not" be able to do anything dangerous, but I'm the only
+one who tested it, so DON'T TRUST...
+
+13-03-1999 Cesare Tagliaferri (c.tagliaferri@computer.org)

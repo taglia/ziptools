@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
+<!-- saved from url=(0035)http://xoomer.virgilio.it/ctagliaf/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>ZipTools</title>
+  </head>
+
+  <body background="./html_files/paper01.jpg">
+    <center><h1><font size="7" color="red">ZipTools for Linux</font></h1></center>
+    <hr>
+    <center><img src="./html_files/ziptools.gif" vspace="30"></center>
+    
+    This little program can control a zip drive without having to type long commands. I've taken <b>Guenther</b>'s "ziptool" and built a Qt graphic interface around it, with some extra features. I've tested it only with my parallel drive, but I think it should work with the SCSI version, too. The code is almost totally uncommented, but by now I have not had any time to comment it.
+    
+    <h3>Features</h3>
+    <ul>
+      <li>Change protection mode: It supports all of the zip protection modes:
+      <ul>
+	<li>Read Write;
+	</li><li>Write protected;
+	</li><li>Write protected with password;
+	</li><li>Read/Write protected with password (with a recent kernel).
+	</li></ul>
+      </li><li>Partition and format a disk: it can format a disk using the ext2 file-system or with the fat. To partition a disk the program needs the "sfdisk" command, and to make the file-system it needs "mke2fs" and "mkdosfs". When formatting a disk with fat, the program uses the 4<sup>th</sup> partition; this is done to let the formatted disk be read by Macintosh computers, too.
+    </li></ul>
+
+    <h3>Requirements</h3>
+    <ul>
+      <li>A Linux machine with a working X environment;
+      </li><li>The <a href="http://www.troll.no/">Troll Tech</a> Qt libraries;
+      </li><li>A parallel (<i>tested</i>) or SCSI (<i>untested</i>) zip drive.
+    </li></ul>
+
+    <h3>Download</h3>
+    By now you can only download the <a href="http://xoomer.virgilio.it/ctagliaf/ziptools-0.1.tar.gz">source package</a>.
+
+    <h3>To do</h3>
+    I would like to make the debian and the rpm binary packages soon. I would like to integrate the program into <a href="http://www.kde.org/">KDE</a>, too. Unfortunately I'll have to leave for the army (yes, in Italy we still have the military service...) next week, so I won't have any time to work on this.
+
+    <h3>Bugs</h3>
+    I'm sure that there are lots of bugs (not only in the program, but in my English, too...), so I would be happy if you send me any comments.
+
+    <h3>My PGP public key</h3>
+<pre>Type Bits/KeyID    Date       User ID
+pub  1024/2C718519 1999/01/31 Cesare Tagliaferri &lt;c.tagliaferri@computer.org&gt;
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 2.6.3ia
+
+mQCNAza04QwAAAEEALq1GzHG5dJDZWAV96JjSofud5xiQ5cV26AUDiEXFlLuq4aP
+b5Ug3WzOUM6W7LKrvqeYCz7HuKv8Nfog85vwzRxGRlQ9uX82I6p4gIiX8qsXKZj3
+hE3lz6z1WNz2XVhiqqvKlgRK3Cfw87ZV9s+ln/SrgtkmVAQSVPj7dHgscYUZAAUR
+tC9DZXNhcmUgVGFnbGlhZmVycmkgPGMudGFnbGlhZmVycmlAY29tcHV0ZXIub3Jn
+PokAlQMFEDa04Qz4+3R4LHGFGQEBuSkD/jVky2his477rnMkhskE+0Pft+t1VlPw
+41FpgPFUO6OvytL40gwYD0zkBCZDeQUoaEN/qpvJ6TIHEnis3Qpo5glHN/jzMCeb
+uEgOUDy8bYpH2qGDbmmTL46oVDT8Hl0SGdIAloze1U3SZJ3Z12yegX7DlLWvYFsX
+CaKeZEN/uMXx
+=PVe8
+-----END PGP PUBLIC KEY BLOCK-----
+</pre><mytubeelement id="myTubeElement" desktopnotification="true" soundnotification="true" loglevel="0" enable="true" loop="false" hidepopup="false" autoplay="false" autobuffer="false" autoplayonbuffer="false" autoplayonbufferpercentage="42" autoplayonsmartbuffer="true" quality="default" fshd="false" onlynotification="false" enablefullscreen="true" savebandwidth="false" hideannotations="false" turnoffpagedbuffering="false"><bundle label_delimitor=":" percentage="%" smart_buffer="Smart Buffer" start_playing_when_buffered="Start playing when buffered" sound="Sound" desktop_notification="Desktop Notification" continuation_on_next_line="-" loop="Loop" only_notify="Only Notify" estimated_time="Estimated Time" global_preferences="Global Preferences" no_notification_supported_on_your_browser="No notification style supported on your browser version" video_buffered="Video Buffered" buffered="Buffered" hyphen="-" buffered_message="The video has been buffered as requested and is ready to play." not_supported="Not Supported" on="On" off="Off" click_to_enable_for_this_site="Click to enable for this site" desktop_notification_denied="You have denied permission for desktop notification for this site" notification_status_delimitor=";" error="Error" adblock_interferance_message="Adblock (or similar extension) is known to interfere with SmartVideo. Please add this url to adblock whitelist." calculating="Calculating" waiting="Waiting" will_start_buffering_when_initialized="Will start buffering when initialized" will_start_playing_when_initialized="Will start playing when initialized" completed="Completed" buffering_stalled="Buffering is stalled. Will stop." stopped="Stopped" hr="Hr" min="Min" sec="Sec" any_moment="Any Moment" extension_id="lnkdbjbjpnpjeciipoaflmpcddinpjjp" tab_id="1064"></bundle></mytubeelement>
+<a href="http://xoomer.virgilio.it/ctagliaf/pubkey.pgp">Binary version</a>
+   
+    <hr>
+    <img src="http://web.tin.it/servizi/web_cgi/wcounter/Count.cgi?userid=ctagliaf|df=sample.dat" align="absmiddle">
+    <hr>
+    <address><a href="mailto:c.tagliaferri@computer.org">Cesare Tagliaferri</a></address>
+<!-- Created: Fri Mar 12 15:54:48 CET 1999 -->
+<!-- hhmts start -->
+Last modified: Wed Mar 17 20:09:43 CET 1999
+<!-- hhmts end -->
+  <!-- START Tag OMNITURE -->
+<script language="JavaScript" type="text/javascript" src="./html_files/tracking_xoomer.virgilio.it.js"></script>
+<!-- SiteCatalyst code version: H.22.1. Copyright 1996-2010 Adobe, Inc. All Rights Reserved More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="./html_files/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+if ((typeof(matrix_tracking_enabled) != "undefined") && (!matrix_tracking_enabled)) { s.t=function () {return '';} }
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript>&lt;img src="http://omniture.virgilio.it/b/ss/tivirgilioglobalprod/1/H.22.1--NS/0"
+height="1" width="1" border="0" alt="" /&gt;</noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+<!-- STOP Tag OMNITURE -->
+
+<!-- START RedMeasure V4 - Java v1.1  Revision: 1.8 -->
+<!-- COPYRIGHT 2000 Red Sheriff Limited -->
+
+<!-- START check_rs_frame -->
+<script language="Javascript">
+<!--
+check_rs_frame=1;
+//-->
+</script>
+
+<script language="Javascript" src="./html_files/multiframe.js">
+</script>
+<!-- END check_rs_frame -->
+
+<script language="JavaScript">
+<!--
+var pCid="it_Matrix-it_xoomfree";
+var w0=1;
+var refR=escape(document.referrer);
+if (refR.length>=252) refR=refR.substring(0,252)+"...";
+//-->
+</script>
+
+<script language="JavaScript1.1">
+<!--
+var w0=0;
+//-->
+</script>
+
+<script language="JavaScript1.1">
+<!--
+if (check_rs_frame) 
+{
+	document.write("<script language='JavaScript1.1' src='http://server-it.imrworldwide.com/a1.js'><\/script>");
+}
+//-->
+</script><script language="JavaScript1.1" src="./html_files/a1.js"></script><img src="./html_files/count" width="1" height="1">
+
+<script language="JavaScript">
+<!--
+if(w0 && check_rs_frame){
+var imgN='<img src="http://server-it.imrworldwide.com/cgi-bin/count?ref='+
+            refR+'&cid='+pCid+'" width=1 height=1>';
+if(navigator.userAgent.indexOf('Mac')!=-1){document.write(imgN);
+}else{
+            document.write('<applet code="Measure.class" '+
+            'codebase="http://server-it.imrworldwide.com/"'+'width=1 height=2>'+
+            '<param name="ref" value="'+refR+'">'+'<param name="cid" value="'+pCid+
+            '"><textflow>'+imgN+'</textflow></applet>');
+            }
+}
+document.write("<COMMENT>");
+//-->
+</script><comment>
+
+<noscript>
+&lt;img src="http://server-it.imrworldwide.com/cgi-bin/count?cid=it_Matrix-it_xoomfree" width=1 height=1&gt;
+</noscript>
+</comment>
+ 
+<!-- END RedMeasure V4 -->
+
+
+<div id="cliptodevonthink-is-installed"></div></body><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.js"></script><link href="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="data:text/css,"></html>

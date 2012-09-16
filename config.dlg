@@ -1,0 +1,449 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {config_dlg.h}
+	ClassSource {config_dlg.cc}
+	ClassName {config_dlg}
+	DataHeader {config_dlgData.h}
+	DataSource {config_dlgData.cc}
+	DataName {config_dlgData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {ZipTools}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {400 350}
+MinSize {400 350}
+MaxSize {400 350}
+Grid {10}
+
+Frame {
+		Style {33}
+		Rect {30 60 340 230}
+		Name {Frame_1}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {/sbin/sfdisk}
+		EchoMode {Normal}
+		MaxLength {30}
+		FrameShown {TRUE}
+		Rect {60 100 130 30}
+		Name {LineEdit_1}
+		Variable {sfdisk_pos}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {/bin/dd}
+		EchoMode {Normal}
+		MaxLength {30}
+		FrameShown {TRUE}
+		Rect {60 170 130 30}
+		Name {LineEdit_3}
+		Variable {dd_pos}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {/sbin/mkdosfs}
+		EchoMode {Normal}
+		MaxLength {30}
+		FrameShown {TRUE}
+		Rect {220 170 130 30}
+		Name {LineEdit_4}
+		Variable {mkdosfs_pos}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {sfdisk location:}
+		AutoResize {FALSE}
+		Margin {-1}
+		LineWidth {2}
+		Rect {50 70 100 30}
+		Name {Label_1}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {dd location:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {50 140 100 30}
+		Name {Label_2}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {mkdosfs location:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {210 140 100 30}
+		Name {Label_3}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {mke2fs location:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {210 70 100 30}
+		Name {Label_4}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {/sbin/mke2fs}
+		EchoMode {Normal}
+		MaxLength {30}
+		FrameShown {TRUE}
+		Rect {220 100 130 30}
+		Name {LineEdit_2}
+		Variable {mke2fs_pos}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Save}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {30 300 100 30}
+		Name {PushButton_3}
+		Signal {[Protected]  clicked --> save_click  ()}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {270 300 100 30}
+		Name {PushButton_4}
+		Signal {[Protected]  clicked --> cancel_click  ()}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {Format needs to know the position of the following programs:}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Style {33}
+		Rect {20 20 360 30}
+		Name {Label_5}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {/bin/echo}
+		EchoMode {Normal}
+		MaxLength {30}
+		FrameShown {TRUE}
+		Rect {60 240 130 30}
+		Name {LineEdit_5}
+		Variable {echo_pos}
+		MinimumSize {130 30}
+		MaximumSize {130 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {echo location:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {50 210 100 30}
+		Name {Label_6}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Browse}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {150 80 40 15}
+		Name {PushButton_6}
+		Font {"helvetica" 8 50 0 0 0 0 0 0}
+		Signal {[Protected]  clicked --> sfdisk_br  ()}
+		MinimumSize {40 15}
+		MaximumSize {40 15}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Browse}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {150 220 40 15}
+		Name {PushButton_11}
+		Font {"helvetica" 8 50 0 0 0 0 0 0}
+		Signal {[Protected]  clicked --> echo_br  ()}
+		MinimumSize {40 15}
+		MaximumSize {40 15}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Browse}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {310 150 40 15}
+		Name {PushButton_12}
+		Font {"helvetica" 8 50 0 0 0 0 0 0}
+		Signal {[Protected]  clicked --> mkdosfs_br  ()}
+		MinimumSize {40 15}
+		MaximumSize {40 15}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Browse}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {150 150 40 15}
+		Name {PushButton_13}
+		Font {"helvetica" 8 50 0 0 0 0 0 0}
+		Signal {[Protected]  clicked --> dd_br  ()}
+		MinimumSize {40 15}
+		MaximumSize {40 15}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Browse}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {310 80 40 15}
+		Name {PushButton_14}
+		Font {"helvetica" 8 50 0 0 0 0 0 0}
+		Signal {[Protected]  clicked --> mke2fs_br  ()}
+		MinimumSize {40 15}
+		MaximumSize {40 15}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Delete cfg file}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {150 300 100 30}
+		Name {PushButton_15}
+		Signal {[Protected]  clicked --> delete_click  ()}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+}

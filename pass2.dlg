@@ -1,0 +1,148 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {new_pass.h}
+	ClassSource {new_pass.cc}
+	ClassName {new_pass}
+	DataHeader {new_passData.h}
+	DataSource {new_passData.cc}
+	DataName {new_passData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {390 230}
+MinSize {390 230}
+MaxSize {390 230}
+Grid {10}
+
+Label {
+		Text {Type the new password:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {20 20 140 30}
+		Name {Label_1}
+		MinimumSize {140 30}
+		MaximumSize {140 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {}
+		EchoMode {Password}
+		MaxLength {33}
+		FrameShown {TRUE}
+		Rect {20 50 350 30}
+		Name {LineEdit_1}
+		Variable {pass}
+		Signal {[Protected]  returnPressed --> ok_click  ()}
+		MinimumSize {350 30}
+		MaximumSize {350 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Ok}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 180 100 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> ok_click  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {270 180 100 30}
+		Name {PushButton_2}
+		Signal {[Protected]  clicked --> cancel_click  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {}
+		EchoMode {Password}
+		MaxLength {33}
+		FrameShown {TRUE}
+		Rect {20 130 350 30}
+		Name {LineEdit_2}
+		Variable {repass}
+		Signal {[Protected]  returnPressed --> ok_click  ()}
+		MinimumSize {350 30}
+		MaximumSize {350 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {Again:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {20 100 100 30}
+		Name {Label_4}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+}

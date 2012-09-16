@@ -1,0 +1,107 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {old_pass.h}
+	ClassSource {old_pass.cc}
+	ClassName {old_pass}
+	DataHeader {old_passData.h}
+	DataSource {old_passData.cc}
+	DataName {old_passData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {390 150}
+MinSize {390 160}
+MaxSize {390 160}
+Grid {10}
+
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Ok}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 100 100 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> ok_click  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {270 100 100 30}
+		Name {PushButton_2}
+		Signal {[Protected]  clicked --> cancel_click  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+LineEdit {
+		Text {}
+		EchoMode {Password}
+		MaxLength {33}
+		FrameShown {TRUE}
+		Rect {20 50 350 30}
+		Name {LineEdit_1}
+		Variable {pass}
+		Signal {[Protected]  returnPressed --> ok_click  ()}
+		MinimumSize {350 30}
+		MaximumSize {350 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {Type the old password:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {20 20 140 30}
+		Name {Label_1}
+		MinimumSize {140 30}
+		MaximumSize {140 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+}

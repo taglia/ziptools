@@ -1,0 +1,109 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {Format_dlg.h}
+	ClassSource {Format_dlg.cc}
+	ClassName {Format_dlg}
+	DataHeader {Format_dlgData.h}
+	DataSource {Format_dlgData.cc}
+	DataName {Format_dlgData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {ZipTools: Disk format}
+	WindowFlags {20480}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {380 150}
+MinSize {380 150}
+MaxSize {380 150}
+Grid {10}
+
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {10}
+		Policy {AtBottom}
+		AutoResize {FALSE}
+		Item {ext2}
+		Item {dos}
+		Rect {190 30 100 30}
+		Name {ComboBox_1}
+		Variable {fs_type}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {AllChildren}
+		PalettePropagation {AllChildren}
+}
+Label {
+		Text {File system type:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {90 30 100 30}
+		Name {Label_1}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Format}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {30 90 100 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> format_click  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {240 90 100 30}
+		Name {PushButton_2}
+		Signal {[Protected]  clicked --> cancel_click  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+}
